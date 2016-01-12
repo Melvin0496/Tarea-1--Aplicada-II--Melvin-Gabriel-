@@ -35,6 +35,7 @@ namespace RegistroCuentas
                     }
                     dataTable = cuenta.Listado(" CuentaId, Descripcion, Balance", condicion, "");
                     ConsultaGridView.DataSource = dataTable;
+                    ConsultaGridView.DataBind();
                 }
             if (ConsultaDropDownList.SelectedIndex == 1)
             {
@@ -48,6 +49,7 @@ namespace RegistroCuentas
                 }
                 dataTable = cuenta.Listado(" CuentaId, Descripcion, Balance", condicion, "");
                 ConsultaGridView.DataSource = dataTable;
+                ConsultaGridView.DataBind();
 
             }
             if (ConsultaDropDownList.SelectedIndex == 2)
@@ -62,6 +64,7 @@ namespace RegistroCuentas
                 }
                 dataTable = cuenta.Listado(" CuentaId, Descripcion, Balance", condicion, "");
                 ConsultaGridView.DataSource = dataTable;
+                ConsultaGridView.DataBind();
 
             }
         }
